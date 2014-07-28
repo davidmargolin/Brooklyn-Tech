@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BrooklynTech</string>
+    <string name="action_settings">Settings</string>
+    <string name="listen">Listen</string>
+    <string name="action_info">About</string>
+    <string name="Month">Month:</string>
+    <string name="Year">Year:</string>
+    <string name="Send">Send</string>
+    <string name="Compose">Compose Email</string>
+    <string name="Subject">Subject</string>
+    <string name="Done">Done</string>
+    <string name="Date_Picker">Select Month And Year</string>
+    <string name="Cat1">General</string>
+    <string name="Cat2">Links</string>
+    <string name="Cat3">Staff Directory</string>
+    <string name="Loading">Loading&#8230;</string>
+    <string name="Cat4">Calendar</string>
+    <string name="Cat5">Athletic</string>
+    <string name="Cat6">Other Information</string>
+    <string name="Cat8">Media</string>
+    <string name="Cat9">College</string>
+    <string name="Cat10">Settings</string>
+    <string name="theme">User Interface</string>
+    <string name="light_title">Theme</string>
+    <string name="theme_summary">App will restart to apply theme</string>
+    <string name="Cat11">Extra Curricular</string>
+    <string name="staffsubtitle">Sub-Departments</string>
+    <string name="sel_date">Selected date:  </string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="daedalus">Daedalus</string>
+    <string name="moodle">Moodle</string>
+    <string name="utexas">UTexas</string>
+    <string name="skedula">Skedula</string>
+    <string name="email">BTHS E-Mail</string>
+    <string name="naviance">Naviance</string>
+    <string name="daedalus_info">A communication tool that provides access to course selection options, transcript data, sophomore major selection, and allows parents and students to review the daily time of entry according to our swipe card entry system.</string>
+    <string name="moodle_info">Moodle is a content management system used by numerous teachers at Tech to support classroom instruction. Assignments may be posted and/or collected electronically, documents will be made available as resources, and the system may be used to assess student learning. Teachers provide students with Moodle login information.</string>
+    <string name="utexas_info">Used primarily by the Physics Department, U-Texas Quest Learning provides an online dynamic homework system which randomizes variables in homework problem sets to provide a forum for 21st century collaborative learning. There are also members of the Math and Chemistry Departments using the Quest system. Teachers provide students with Quest login information.</string>
+    <string name="skedula_info">Skedula (Pupil Path) is used by the faculty to record and  communicate student academic performance. Student grades on homework, in class assignments, examinations and formal assessments, cumulative grades, transcript records, and other information are available. Students are given basic instruction for  Pupil Path in their 9th grade technology class.</string>
+    <string name="email_info">Each student gets a Brooklyn Tech email address. Registration information is provided at the beginning of the school year. Tech email is the primary mode of communication to students and should be checked regularly. Students have the option of using Tech email or having it forwarded to their email of preference. After graduation Tech email addresses will continue to be used by the Brooklyn Tech Alumni Foundation to stay in touch with students.</string>
+    <string name="naviance_info">Naviance is used mostly by the Guidance staff and College Office team to support students as they navigate the college application and financial aid processes. Students are given basic instruction for Naviance in their 9th grade technology class.</string>
+    <string-array name="People">
+        <item >Mr. Randy J. Asher (School Principal)</item>
+        <item >Mrs. Jennifer Sullivan (Assistant Principal, Chief Financial Officer)</item>
+        <item >Mr. Paul Hoftyzer (IA) (Assistant Principal, Provost &amp; Chief Academic Officer)</item>
+        <item >Ms. Gina Paulson (Assistant Principal, Guidance, College Services, Special Education)</item>
+        <item >Ms. Maureen O\'Hara (Assistant Principal, Health, Safety, &amp; Physical Education)</item>
+        <item >Mr. Alan Palmer (Assistant Principal, Data, Testing, &amp; Transportation)</item>
+        <item >Mrs. Laura Marquez (IA) (Assistant Principal, Student &amp; Parent Engagement)</item>
+    </string-array>
+    <string-array name="Years">
+        <item >2012</item>
+        <item >2013</item>
+        <item >2014</item>
+    </string-array>
+    <string-array name="Months">
+        <item >January</item>
+        <item >February</item>
+        <item >March</item>
+        <item >April</item>
+        <item >May</item>
+        <item >June</item>
+        <item >July</item>
+        <item >August</item>
+        <item >September</item>
+        <item >October</item>
+        <item >November</item>
+        <item >December</item>
+    </string-array>
+    <string-array name="themes">
+        <item >Light</item>
+        <item >Dark</item>
+    </string-array>
+    <string-array name="themevalues">
+        <item >LIGHT</item>
+        <item >DARK</item>
+    </string-array>
+    <string-array name="pages">
+        <item >General News</item>
+        <item >Athletic News</item>
+        <item >Extra Curricular News</item>
+        <item >Links</item>
+        <item >Staff Directory</item>
+        <item >Calendar</item>
+        <item >Bell Schedule</item>
+        <item >Important Places</item>
+    </string-array>
+    <string-array name="pagevalues">
+        <item >news</item>
+        <item >athletics</item>
+        <item >ec</item>
+        <item >links</item>
+        <item >staff</item>
+        <item >calendar</item>
+        <item >schedule</item>
+        <item >places</item>
+    </string-array>
+    <string name="ok_text">Okay</string>
+    <string name="alert_title">He\'s Dead, Jim!!!</string>
+    <string name="alert_message">Something is preventing data from loading.\n
+        Check your internet connection.</string>
+    
+
+</resources>

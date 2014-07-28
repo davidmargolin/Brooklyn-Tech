@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?listcard"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="?attr/textcolor"
+        android:textAppearance="@android:style/TextAppearance" />
+    <View
+        android:layout_height="2dp"
+        android:layout_margin="8dp"
+        android:layout_width="fill_parent"
+        android:background="?attr/dividercolor"/>
+    <TextView
+        android:id="@+id/tvPubDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:textColor="?attr/textcolor"
+        android:paddingBottom="4dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:textColor="?attr/textcolor"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tvLnk"
+        android:layout_width="match_parent"
+        android:textColor="?attr/textcolor"
+        android:layout_height="wrap_content" />
+    </LinearLayout>

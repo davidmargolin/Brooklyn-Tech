@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp" > -->
+<com.jakewharton.scalpel.ScalpelFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scalpel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/scrollView1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+    android:scrollbarStyle="insideOverlay"
+    android:clipToPadding="false">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/listcard"
+            android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:id="@+id/Daedalus">
+
+               <TextView
+                   android:id="@+id/daedalus"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:text="@string/daedalus"
+                   android:textSize="22sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/textView1"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/daedalus_info"
+                   android:textSize="16sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/listcard"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="16dp"
+        android:id="@+id/Email">
+
+               <TextView
+                   android:id="@+id/email"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:text="@string/email"
+                   android:textSize="22sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/textView2"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/email_info"
+                   android:textSize="16sp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/listcard"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="16dp"
+        android:id="@+id/Moodle">
+
+               <TextView
+                   android:id="@+id/moodle"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:text="@string/moodle"
+                   android:textSize="22sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/textView3"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/moodle_info"
+                   android:textSize="16sp" />
+           </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/listcard"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="16dp"
+        android:id="@+id/Skedula">
+
+               <TextView
+                   android:id="@+id/skedula"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:text="@string/skedula"
+                   android:textSize="22sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/textView4"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/skedula_info"
+                   android:textSize="16sp" />
+           </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/listcard"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="16dp"
+        android:id="@+id/Naviance">
+
+               <TextView
+                   android:id="@+id/naviance"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:text="@string/naviance"
+                   android:textSize="22sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/textView5"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/naviance_info"
+                   android:textSize="16sp" />
+           </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Utexas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/listcard"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
+
+               <TextView
+                   android:id="@+id/utexas"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:text="@string/utexas"
+                   android:textSize="22sp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/textView6"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/utexas_info"
+                   android:textSize="16sp" />
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+    </com.jakewharton.scalpel.ScalpelFrameLayout>
+<!-- 
+</LinearLayout> -->

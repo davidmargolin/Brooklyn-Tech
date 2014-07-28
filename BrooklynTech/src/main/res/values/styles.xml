@@ -1,0 +1,93 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="LightTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="navdrawercolor">#ffffff</item>
+        <!--<item name="android:windowBackground">@color/LightGrey</item>-->
+        <item name="android:windowBackground">@color/LightGrey</item>
+        <item name="cardcolor">@color/White</item>
+        <item name="textcolor">@color/Black</item>
+        <item name="dividercolor">@color/dividerlight</item>
+        <item name="refreshcolor">@drawable/ic_action_refresh</item>
+        <item name="icdrawercolor">@drawable/ic_drawer</item>
+        <item name="descriptiontext">@color/Black</item>
+        <item name="dividercolorswitch">@color/dividerlight</item>
+        <item name="categorybackcolor">@color/DimGray</item>
+        <item name="websitecolor">@drawable/ic_action_web_site</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="volumeoncolor">@drawable/ic_action_volume_on</item>
+        <item name="android:actionBarStyle">@style/BlueActionBar</item>
+        <item name="sendnowcolor">@drawable/ic_action_send_now</item>
+        <item name="emailcolor">@drawable/ic_action_email</item>
+        <item name="selectable">@drawable/selector_light</item>
+        <item name="drawertextcolor">@color/Black</item>
+        <item name="listcard">@drawable/simplelistselector_light</item>
+        <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader_light</item>
+    </style>
+
+    <style name="MyTheme" parent="android:Theme.Holo">
+        <item name="navdrawercolor">#333333</item>
+        <item name="cardcolor">@color/halfverygray</item>
+        <item name="selectable">@drawable/selector</item>
+        <item name="textcolor">@color/White</item>
+        <item name="categorybackcolor">@color/halfverygray</item>
+        <item name="refreshcolor">@drawable/ic_action_refresh_light</item>
+        <item name="dividercolor">@color/DimGray</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="dividercolorswitch">@color/verydarkgray</item>
+        <item name="android:windowBackground">@color/verydarkgray</item>
+        <item name="icdrawercolor">@drawable/ic_drawer_light</item>
+        <item name="android:actionBarStyle">@style/DarkBlueActionBar</item>
+        <!--<item name="descriptiontext">@android:style/Widget.Holo.TextView</item>-->
+        <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader</item>
+        <item name="drawertextcolor">@color/White</item>
+        <item name="websitecolor">@drawable/ic_action_web_site_light</item>
+        <item name="volumeoncolor">@drawable/ic_action_volume_on_light</item>
+        <item name="sendnowcolor">@drawable/ic_action_send_now_light</item>
+        <item name="emailcolor">@drawable/ic_action_email_light</item>
+        <item name="listcard">@drawable/simplelistselector</item>
+
+    </style>
+    <!-- Application theme. -->
+    <style name="Widget.Custom.PtrHeader" parent="android:Widget">
+
+        <!-- Color to tint the progress bar -->
+        <item name="ptrProgressBarColor">@color/White</item>
+    </style>
+
+    <style name="Widget.Custom.PtrHeader_light" parent="android:Widget">
+
+        <!-- Color to tint the progress bar -->
+        <item name="ptrProgressBarColor">@color/White</item>
+    </style>
+
+    <!--<style name="MyActionBar" parent="@android:style/Widget.Holo.Light.DarkActionBar">
+               <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+               <item name="android:subtitleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+      </style>-->
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <!--<item name="android:textColor">@color/actiongray</item>-->
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="DarkActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid"></style>
+
+    <style name="actiontextcolor" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="DarkBlueActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/materialblue</item>
+        <item name="android:height">52dp</item>
+        <item name="android:titleTextStyle">@style/actiontextcolor</item>
+    </style>
+    <style name="BlueActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/materialblue</item>
+        <item name="android:height">52dp</item>
+        <item name="android:titleTextStyle">@style/actiontextcolor</item>
+    </style>
+</resources>

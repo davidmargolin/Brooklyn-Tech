@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jakewharton.scalpel.ScalpelFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scalpel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+        android:padding="8dp">
+
+
+            <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                android:background="?attr/cardcolor">
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/tableRow">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Room"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Description"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                        android:layout_height="2dip"
+                        android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="BS1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Pool"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="BW2/4"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Dean's Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="BE2"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Metrocards during school day, afterward in 1N1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1st Floor North East"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Main Entrance"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1st Floor South East"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Handicap Main Entrance"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1st Floor Center West"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Student Main Entrance (before 10:30 am)"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1st Floor South West"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1st Floor Gym"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1st Floor Center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="BTHS Auditorium"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1st Floor Center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Main Lobby"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1W2"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Parent and Student Engagement Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1W2"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Working Papers"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1W9"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Alumni Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1W10"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Attendance Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1W12"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Programming Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="1W18"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Principal's Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="3rd Fl. South"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Phys Ed Locker Rooms"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="3W22"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Infirmary"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="3W26"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Phys Ed Department Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="5C1 (West)"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Library"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="7C1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="School Store (GO Store)"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="7C3"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Student Government Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="7S2"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Guidance Department Main Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="7S5"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="College Office"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="7th Floor South"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Guidance Department Offices"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="7th Floor"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Cafeteria"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="?attr/dividercolor" />
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="8th Floor"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Gym (Center West Staircase)"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:lines="2"/>
+                </TableRow>
+            </TableLayout>
+    </ScrollView>
+    </com.jakewharton.scalpel.ScalpelFrameLayout>

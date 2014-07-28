@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/theme">
+        <ListPreference
+            android:title="@string/light_title"
+            android:summary="@string/theme_summary"
+            android:key="themepref"
+            android:entryValues="@array/themevalues"
+            android:entries="@array/themes"
+            android:defaultValue="LIGHT"/>
+        <ListPreference
+            android:title="Default Page"
+            android:summary="Page that appears when the app is opened"
+            android:key="pagepref"
+            android:entryValues="@array/pagevalues"
+            android:entries="@array/pages"
+            android:defaultValue="news"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Web">
+        <CheckBoxPreference
+            android:title="Open Links In Browser"
+            android:key="openinbrowser"
+            android:defaultValue="false"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other">
+    <Preference
+        android:title="About"
+        android:key="about"
+        />
+        <CheckBoxPreference
+            android:title="Developer Mode"
+            android:key="devmode"
+            android:defaultValue="false"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

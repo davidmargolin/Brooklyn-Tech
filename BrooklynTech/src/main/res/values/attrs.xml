@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="cardcolor" format="color|reference" />
+    <attr name="textcolor" format="color|reference"/>
+    <attr name="dividercolor" format="color|reference"/>
+    <attr name="icdrawercolor" format="reference"/>
+    <attr name="refreshcolor" format="integer|reference"/>
+    <attr name="descriptiontext" format="color|reference"/>
+    <attr name="websitecolor" format="integer|reference"/>
+    <attr name="volumeoncolor" format="integer|reference"/>
+    <attr name="sendnowcolor" format="integer|reference"/>
+    <attr name="emailcolor" format="integer|reference"/>
+    <attr name="selectable" format="integer|reference"/>
+    <attr name="listcard" format="integer|reference"/>
+    <attr name="dividercolorswitch" format="color|reference"/>
+    <attr name="navdrawercolor" format ="color|reference"/>
+    <attr name="drawertextcolor" format="color|reference"/>
+    <attr name="categorybackcolor" format="color|reference"/>
+</resources>

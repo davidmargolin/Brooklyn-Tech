@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tod.android.bths"
+    android:versionCode="21"
+    android:versionName="1.1">
+    <uses-sdk
+        tools:node="replace"
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <supports-screens
+        android:anyDensity="true"
+        android:xlargeScreens="false"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/LightTheme" >
+        <activity android:name=".BellSchedule"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ic_drawer"/>
+        <activity android:name=".ImportantPlaces"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ic_drawer"/>
+        <activity android:name=".ArticleViewer"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/ic_drawer"/>
+        <activity android:name=".Announcements"
+            android:icon="@drawable/ic_drawer"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StaffSubDeps"
+            android:icon="@drawable/ic_drawer"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FinalAnnouncements"
+            android:icon="@drawable/ic_drawer"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AnnouncementViewer"
+            android:icon="@drawable/ic_drawer"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FinalStaff"
+            android:icon="@drawable/ic_drawer"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WebViewActivity"
+            android:icon="@drawable/ic_drawer"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BrowserView"
+            android:icon="@drawable/ic_drawer"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.tod.android.bths.LauncherActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"
+           android:windowSoftInputMode="adjustPan"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tod.android.bths.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:icon="@drawable/hamburger">
+            <!--android:icon="@drawable/bthstesting"-->
+
+        </activity>
+<!--        <receiver android:name="MainAppWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/appwidgetinfo" />
+        </receiver>-->
+    </application>
+</manifest>

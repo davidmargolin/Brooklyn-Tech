@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/cardcolor"
+    android:padding="4dp">
+
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="center_vertical|left"
+        android:id="@+id/name"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:text="lorem ipsum dolor sit ametddd"
+        android:paddingLeft="12dp"
+        android:background="?attr/selectable"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/buttons"
+        android:layout_alignBottom="@+id/buttons"
+        android:layout_toLeftOf="@+id/buttons">
+
+    </TextView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:id="@+id/buttons"
+        android:background="?attr/cardcolor"
+        android:layout_alignParentRight="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:background="?attr/selectable"
+        android:layout_gravity="right|center_vertical"
+        android:baselineAligned="false">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:background="@android:color/transparent"
+            android:src="?attr/emailcolor"
+            android:layout_margin="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:id="@+id/dividerid"
+            android:background="?attr/dividercolor"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectable"
+        android:layout_gravity="right|center_vertical">
+        <ImageButton
+            android:layout_width="40dp"
+            android:background="@android:color/transparent"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:layout_margin="8dp"
+            android:src="?attr/websitecolor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
