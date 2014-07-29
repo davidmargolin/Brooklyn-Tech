@@ -9,7 +9,7 @@ Description: A simple app to make life at Brooklyn Technical High School easier.
   <img src="http://developer.android.com/images/brand/en_app_rgb_wo_60.png">
 </a>
 
-## Updates
+## Changelog
 #####V1.1
 - category bar
 - daily announcements now lists most recent announcements first
