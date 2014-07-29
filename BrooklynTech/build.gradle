@@ -25,4 +25,5 @@ dependencies {
     compile 'com.github.chrisbanes.actionbarpulltorefresh:library:+'
     compile project(':libraries:calendar-card')
     compile project(':libraries:library')
+    compile files('libs/GoogleAnalyticsServicesAndroid_3.02/libGoogleAnalyticsServices.jar')
 }

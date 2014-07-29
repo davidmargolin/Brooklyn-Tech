@@ -5,7 +5,6 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -16,22 +15,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.jakewharton.scalpel.ScalpelFrameLayout;
+import com.google.analytics.tracking.android.EasyTracker;
 
 
 public class MainActivity extends Activity {
     private static long back_pressed;
-
-    // Within which the entire activity is enclosed
     DrawerLayout mDrawerLayout;
-
-    // ListView represents Navigation Drawer
     LinearLayout mDrawerItem1;
     LinearLayout mDrawerItem2;
     LinearLayout mDrawerItem3;
@@ -41,15 +35,6 @@ public class MainActivity extends Activity {
     LinearLayout mDrawerItem6;
     LinearLayout ChosenLayout;
     LinearLayout mDrawerItem9;
-/*    View divider1;
-    View divider2;
-    View divider3;
-    View divider4;
-    View divider5;
-    View divider6;
-    View divider7;
-    View divider8;
-    View divider9;*/
     LinearLayout news;
     LinearLayout mDrawerItem8;
     ScrollView mDrawerList;
@@ -547,7 +532,19 @@ public class MainActivity extends Activity {
     }
     /**
      * Handling the touch event of app icon
+     *
      */
+    @Override
+    public void onStart() {
+        super.onStart();
+        EasyTracker.getInstance(this).activityStart(this);  // Add this method.
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        EasyTracker.getInstance(this).activityStop(this);  // Add this method.
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return mDrawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
