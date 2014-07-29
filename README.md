@@ -1,7 +1,7 @@
-# <img src="https://lh6.ggpht.com/wbtigaxy7NsJHENSK9K55TkIEbEUuNky2GB_VqoUfH9w9ajLnszVwOAadKCyx_Q3Vg"/> Brooklyn Tech
+#  Brooklyn Tech
 
 Description: A simple app to make life at Brooklyn Technical High School easier. News, Calendars, and Schedules at your fingertips.
-  <img src="http://s13.postimg.org/to0p12ltj/graphic2.png"/>
+  <img src=""/>
 
 ## Download
 <a href="https://play.google.com/store/apps/details?id=com.tod.android.bths" alt="logo" title="Download from Google Play">
