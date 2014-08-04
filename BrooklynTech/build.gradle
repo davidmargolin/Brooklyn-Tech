@@ -21,7 +21,6 @@ dependencies {
     compile files('libs/Simple-Rss2-Android.jar')
     compile 'org.jsoup:jsoup:+'
     compile 'com.jakewharton.scalpel:scalpel:+'
-    compile 'uk.co.androidalliance:edgeeffectoverride:+'
     compile 'com.github.chrisbanes.actionbarpulltorefresh:library:+'
     compile project(':libraries:calendar-card')
     compile project(':libraries:library')
