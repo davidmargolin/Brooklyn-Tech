@@ -10,13 +10,13 @@
             android:entryValues="@array/themevalues"
             android:entries="@array/themes"
             android:defaultValue="LIGHT"/>
-        <ListPreference
+<!--        <ListPreference
             android:title="Default Page"
             android:summary="Page that appears when the app is opened"
             android:key="pagepref"
             android:entryValues="@array/pagevalues"
             android:entries="@array/pages"
-            android:defaultValue="news"/>
+            android:defaultValue="news"/>-->
     </PreferenceCategory>
     <PreferenceCategory android:title="Web">
         <CheckBoxPreference

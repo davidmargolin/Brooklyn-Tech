@@ -4,11 +4,14 @@ import android.app.Dialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.Preference;
-import android.preference.PreferenceFragment;
+
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import com.github.machinarius.preferencefragment.PreferenceFragment;
 
 
 /**
@@ -59,8 +62,9 @@ public class SettingsFragment extends PreferenceFragment {
             getActivity().setTheme(R.style.LightTheme);
         }
         View view = super.onCreateView(inflater, container, savedInstanceState);
-
-
+        ListView lv = (ListView) view.findViewById(android.R.id.list);
+        lv.setPadding(16,16,16,16);
+        lv.setClipToPadding(false);
         return view;
     }
 

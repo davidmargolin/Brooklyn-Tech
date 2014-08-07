@@ -22,6 +22,7 @@ dependencies {
     compile 'org.jsoup:jsoup:+'
     compile 'com.jakewharton.scalpel:scalpel:+'
     compile 'com.github.chrisbanes.actionbarpulltorefresh:library:+'
+    compile 'com.github.machinarius:preferencefragment:0.1.1'
     compile project(':libraries:calendar-card')
     compile project(':libraries:library')
     compile files('libs/GoogleAnalyticsServicesAndroid_3.02/libGoogleAnalyticsServices.jar')

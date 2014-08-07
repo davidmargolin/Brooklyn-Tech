@@ -11,46 +11,7 @@
     <com.wt.calendarcard.CalendarCard
         android:id="@+id/calendarCard1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
-        android:visibility="invisible"
-        android:layout_marginBottom="12dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/calendarCard1"
-        android:layout_alignParentBottom="true"
-        android:overScrollMode="never">
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal">
-        <TextView
-            android:id="@+id/textView1"
-            android:textSize="18sp"
-            android:text="testing"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center_horizontal"
-            />
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center_horizontal"/>
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent"/>
 
 
 

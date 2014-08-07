@@ -20,7 +20,6 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 import me.imid.swipebacklayout.lib.SwipeBackLayout;

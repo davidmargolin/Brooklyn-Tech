@@ -37,6 +37,8 @@
     <string name="skedula">Skedula</string>
     <string name="email">BTHS E-Mail</string>
     <string name="naviance">Naviance</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="daedalus_info">A communication tool that provides access to course selection options, transcript data, sophomore major selection, and allows parents and students to review the daily time of entry according to our swipe card entry system.</string>
     <string name="moodle_info">Moodle is a content management system used by numerous teachers at Tech to support classroom instruction. Assignments may be posted and/or collected electronically, documents will be made available as resources, and the system may be used to assess student learning. Teachers provide students with Moodle login information.</string>
     <string name="utexas_info">Used primarily by the Physics Department, U-Texas Quest Learning provides an online dynamic homework system which randomizes variables in homework problem sets to provide a forum for 21st century collaborative learning. There are also members of the Math and Chemistry Departments using the Quest system. Teachers provide students with Quest login information.</string>

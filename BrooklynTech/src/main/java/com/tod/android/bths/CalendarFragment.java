@@ -1,158 +1,158 @@
 package com.tod.android.bths;
 
-import android.app.Fragment;
+
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
+import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.jakewharton.scalpel.ScalpelFrameLayout;
+import com.wt.calendarcard.CalendarCard;
+import com.wt.calendarcard.CardGridItem;
+import com.wt.calendarcard.OnCellItemClick;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+/**
+ * Created by Margolin on 12/30/13.
+ */
 public class CalendarFragment extends Fragment {
-int Year;
-int Month;
-    TextView cal;
-String calwebsite;
-String MonthTextLong;
-String MonthTextShort;
-String YearText;
-String atext;
-SimpleDateFormat month_short;
-Document caldoc;
-Calendar c;
-Thread calthread;
-SimpleDateFormat month_long;
-Elements calparagraphs;
+    private CalendarCard mCalendarCard;
+    Calendar cal;
+    Elements calparagraphs;
+    int day;
+    Document caldoc;
+    String calwebsite;
+    Button next;
+    Button previous;
+    Async task;
+    ScalpelFrameLayout scalpelView;
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        String theme = sharedPreferences.getString("themepref", "LIGHT");
+        if (theme.contains("DARK")){
+            getActivity().setTheme(R.style.MyTheme);
+        }else{
+            getActivity().setTheme(R.style.LightTheme);
+        }
+        Boolean devmode = sharedPreferences.getBoolean("devmode", false);
+        View v = inflater.inflate(R.layout.calendarlayout, container, false);
+        mCalendarCard = (CalendarCard)v.findViewById(R.id.calendarCard1);
+        cal=Calendar.getInstance();
+        next = (Button)mCalendarCard.findViewById(R.id.next);
+        previous = (Button)mCalendarCard.findViewById(R.id.previous);
 
-@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-
-		View v = inflater.inflate(R.layout.calendar_fragment_layout, container, false);
-		c = Calendar.getInstance();
-        month_long = new SimpleDateFormat("MMMM");
-        MonthTextLong=month_long.format(c.getTime());
-    month_short = new SimpleDateFormat("MM");
-    MonthTextShort=month_short.format(c.getTime());
-    calwebsite = "http://www.bths.edu/apps/events/list_pff.jsp?";
-        Year = c.get(Calendar.YEAR); 
-        YearText = Integer.toString(Year);
-        cal = (TextView)v.findViewById(R.id.calendartext);
-
-
-		Spinner months = (Spinner) v.findViewById(R.id.months_spinner);
-        ArrayAdapter<CharSequence> monthadapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.Months, R.layout.picker_row);
-              months.setAdapter(monthadapter);
-              months.setOnItemSelectedListener(new OnItemSelectedListener(){
-            	  @Override
-            	  public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int monthplace, long id) {
-            	      Month = monthplace;
-            	  }
-            	  public void onNothingSelected(AdapterView<?> parent) {
-            	    }
-              });
-              months.setSelection(monthadapter.getPosition(MonthTextLong));
+        mCalendarCard.setDateDisplay(cal);
+        //cal.set(2013, 2,5);
+        calwebsite = "http://www.bths.edu/apps/events/list_pff.jsp?sd=&y="+ mCalendarCard.getDateDisplay().get(Calendar.YEAR) +"&m="+ mCalendarCard.getDateDisplay().get(Calendar.MONTH) +"&id=0";
+        task = new Async();
+        task.execute();
 
 
 
-        Spinner years = (Spinner) v.findViewById(R.id.years_spinner);
-        ArrayAdapter<CharSequence> yearadapter = ArrayAdapter.createFromResource(getActivity(),
-             R.array.Years, R.layout.picker_row);
-        years.setAdapter(yearadapter);
-        years.setOnItemSelectedListener(new OnItemSelectedListener(){
-      	  @Override
-      	  public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int yearplace, long id) {
-      	      if (yearplace == 0){
-      	    	  Year = 2012;
-      	      }if (yearplace == 1){
-      	    	  Year = 2013;
-      	      }if (yearplace == 2){
-      	    	  Year = 2014;
-      	      }
-      	  }
+        if (devmode){
+            scalpelView = (ScalpelFrameLayout)v.findViewById(R.id.scalpel);
+            scalpelView.setLayerInteractionEnabled(true);
+            scalpelView.setDrawViews(true);
+        }
 
-      	  public void onNothingSelected(AdapterView<?> parent) {
-      	  }
-      		  });
-       years.setSelection(yearadapter.getPosition(YearText));
+        return v;
+    }
+    class Async extends AsyncTask<String, Void, String> {
 
-        Button button = (Button) v.findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-        
-           public void onClick(View v) {
-        	   //if there is an internet connection
-               calwebsite = "http://www.bths.edu/apps/events/list_pff.jsp?sd=&y="+ Year +"&m="+ Month +"&id=0";
-               Thread calthread2 = new Thread() {
-                   @Override
-                   public void run() {
-                       try {
-                           caldoc = Jsoup.connect(calwebsite)
-                                   .userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36")
-                                   .get();
-                           caldoc.select("img").remove();
-                           caldoc.select("b").first().remove();
-                           //final Elements paragraphs = doc.select("p").prepend("\\n\\n");
-                           caldoc.select("td").first().remove();
-                           calparagraphs = caldoc.select("center");
-                           getActivity().runOnUiThread(new Runnable() {
-                               public void run() {
-                                   cal.setText(Html.fromHtml(calparagraphs.toString()));
-                               }
-                           });
-                       } catch (IOException e) {
-                           e.printStackTrace();
-                       }
-                   }
-               };
-               calthread2.start();
-            }
-           
-
-        });
-    calthread = new Thread() {
         @Override
-        public void run() {
+        protected String doInBackground(String... urls) {
             try {
                 caldoc = Jsoup.connect(calwebsite)
                         .userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36")
                         .get();
-                caldoc.select("img").remove();
-                caldoc.select("b").first().remove();
-                //final Elements paragraphs = doc.select("p").prepend("\\n\\n");
-                caldoc.select("td").first().remove();
-                //final Elements paragraphs = doc.select("p").prepend("\\n\\n");
-                calparagraphs = caldoc.select("center");
-                getActivity().runOnUiThread(new Runnable() {
-                    public void run() {
-                        cal.setText(Html.fromHtml(calparagraphs.toString()));
-                    }
-                });
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            return null;
         }
-    };
-    calthread.start();
-return v;
-	}
+        @Override
+        protected void onPostExecute(String result) {
+            previous.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    cal= Calendar.getInstance();
+                    cal.set(mCalendarCard.getDateDisplay().get(Calendar.YEAR), mCalendarCard.getDateDisplay().get(Calendar.MONTH) - 1, 1);
+                    mCalendarCard.setDateDisplay(cal);
+                    mCalendarCard.notifyChanges();
+                    calwebsite = "http://www.bths.edu/apps/events/list_pff.jsp?sd=&y="+ mCalendarCard.getDateDisplay().get(Calendar.YEAR) +"&m="+ mCalendarCard.getDateDisplay().get(Calendar.MONTH) +"&id=0";
+                    if (!task.isCancelled()) {
+                        task.cancel(true);
+                    }
+                    task = new Async();
+                    task.execute();
+                }
+            });
+            next.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    cal= Calendar.getInstance();
+                    cal.set(mCalendarCard.getDateDisplay().get(Calendar.YEAR),mCalendarCard.getDateDisplay().get(Calendar.MONTH)+1,1);
+                    mCalendarCard.setDateDisplay(cal);
+                    mCalendarCard.notifyChanges();
+                    calwebsite = "http://www.bths.edu/apps/events/list_pff.jsp?sd=&y="+ mCalendarCard.getDateDisplay().get(Calendar.YEAR) +"&m="+ mCalendarCard.getDateDisplay().get(Calendar.MONTH) +"&id=0";
+                    if (!task.isCancelled()) {
+                        task.cancel(true);
+                    }
+                    task = new Async();
+                    task.execute();
+                }
+            });
+            mCalendarCard.setOnCellItemClick(new OnCellItemClick() {
+                @Override
+                public void onCellClick(View v, CardGridItem item) {
+                    day = item.getDayOfMonth();
+                    String displaydate = "";
+                    String displayevent = "";
+                    Boolean error = false;
+                    try{
+                        calparagraphs = caldoc.select("td:contains(" + " " + day + ", " + mCalendarCard.getDateDisplay().get(Calendar.YEAR) + ")>ul>li");
+                        displaydate = new SimpleDateFormat("MMMM").format(cal.getTime()) + " " + day + ", " + mCalendarCard.getDateDisplay().get(Calendar.YEAR);
+                        displayevent = Html.fromHtml(calparagraphs.toString()).toString().replaceFirst("\n","");
+
+
+                    }catch(NullPointerException e){
+                        e.printStackTrace();
+                        error = true;
+                    }
+                    if (!error) {
+                        if (displayevent.length() > 2) {
+                            String displayinfo = displaydate + "\n" + displayevent;
+                            Toast.makeText(getActivity().getBaseContext(), displayinfo, Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(getActivity().getBaseContext(), "No events found", Toast.LENGTH_LONG).show();
+                        }
+                    }else {
+                        Toast.makeText(getActivity().getBaseContext(), "Couldn't connect to network", Toast.LENGTH_SHORT).show();
+                    }
+
+
+                }
+            });
+        }
+
+    }
 }

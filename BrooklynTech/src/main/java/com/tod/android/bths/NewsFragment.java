@@ -1,20 +1,11 @@
 package com.tod.android.bths;
 
 
-import android.app.Fragment;
-
 import android.content.Context;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import at.theengine.android.simple_rss2_android.RSSItem;
-import at.theengine.android.simple_rss2_android.SimpleRss2Parser;
-import at.theengine.android.simple_rss2_android.SimpleRss2ParserCallback;
-import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
-import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
-import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,10 +14,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -35,10 +24,17 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import at.theengine.android.simple_rss2_android.RSSItem;
+import at.theengine.android.simple_rss2_android.SimpleRss2Parser;
+import at.theengine.android.simple_rss2_android.SimpleRss2ParserCallback;
+import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
+import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
 
 
 
-public class NewsFragment extends Fragment implements OnRefreshListener {
+
+public class NewsFragment extends android.support.v4.app.Fragment implements OnRefreshListener {
 
     private Context mContext;
     private String etFeedUrl;
@@ -59,8 +55,8 @@ public class NewsFragment extends Fragment implements OnRefreshListener {
         }else{
             getActivity().setTheme(R.style.LightTheme);
         }
-        Boolean devmode = sharedPreferences.getBoolean("devmode", false);
         View v = inflater.inflate(R.layout.news_fragment_layout, container, false);
+        NavActivity.hidecontentbar(true);
         mPullToRefreshLayout = (PullToRefreshLayout) v.findViewById(R.id.ptr_layout);
 
         // Now setup the PullToRefreshLayout
@@ -91,11 +87,6 @@ public class NewsFragment extends Fragment implements OnRefreshListener {
 
             @Override
             protected String doInBackground(String... urls) {
-                try {
-                    Thread.sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 parser = new SimpleRss2Parser(etFeedUrl, getCallback());
                 parser.parseAsync();
                 return null;

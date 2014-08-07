@@ -15,7 +15,7 @@
         <item name="icdrawercolor">@drawable/ic_drawer</item>
         <item name="descriptiontext">@color/Black</item>
         <item name="dividercolorswitch">@color/dividerlight</item>
-        <item name="categorybackcolor">@color/DimGray</item>
+        <item name="categorybackcolor">@color/materialblue</item>
         <item name="websitecolor">@drawable/ic_action_web_site</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="volumeoncolor">@drawable/ic_action_volume_on</item>
@@ -33,7 +33,7 @@
         <item name="cardcolor">@color/halfverygray</item>
         <item name="selectable">@drawable/selector</item>
         <item name="textcolor">@color/White</item>
-        <item name="categorybackcolor">@color/halfverygray</item>
+        <item name="categorybackcolor">@color/materialblue</item>
         <item name="refreshcolor">@drawable/ic_action_refresh_light</item>
         <item name="dividercolor">@color/DimGray</item>
         <item name="android:windowIsTranslucent">true</item>
