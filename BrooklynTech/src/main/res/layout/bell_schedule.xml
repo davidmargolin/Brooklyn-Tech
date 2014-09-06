@@ -63,7 +63,7 @@
                     android:textStyle="bold"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -91,7 +91,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8:47 AM"
+                    android:text="8:43 AM"
                     android:gravity="center"
                     android:id="@+id/textView7"
                     android:layout_weight="1"/>
@@ -99,13 +99,13 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 min"
+                    android:text="43 min"
                     android:gravity="center"
                     android:id="@+id/textView8"
                     android:layout_weight="1"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -126,7 +126,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8:51 AM"
+                    android:text="8:47 AM"
                     android:gravity="center"
                     android:id="@+id/textView10"
                     android:layout_weight="1"/>
@@ -134,7 +134,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="9:38 AM"
+                    android:text="9:28 AM"
                     android:gravity="center"
                     android:id="@+id/textView11"
                     android:layout_weight="1"/>
@@ -142,13 +142,13 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 min"
+                    android:text="41 min"
                     android:gravity="center"
                     android:id="@+id/textView12"
                     android:layout_weight="1"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -168,7 +168,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="9:42 AM"
+                    android:text="9:32 AM"
                     android:gravity="center"
                     android:id="@+id/textView14"
                     android:layout_weight="1"/>
@@ -176,7 +176,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10:33 AM"
+                    android:text="10:18 AM"
                     android:gravity="center"
                     android:id="@+id/textView15"
                     android:layout_weight="1"/>
@@ -184,13 +184,13 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="51 min"
+                    android:text="46 min"
                     android:gravity="center"
                     android:id="@+id/textView16"
                     android:layout_weight="1"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -210,7 +210,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10:37 AM"
+                    android:text="10:22 AM"
                     android:gravity="center"
                     android:id="@+id/textView18"
                     android:layout_weight="1"/>
@@ -218,7 +218,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="11:24 AM"
+                    android:text="11:03 AM"
                     android:gravity="center"
                     android:id="@+id/textView19"
                     android:layout_weight="1"/>
@@ -226,13 +226,13 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 min"
+                    android:text="41 min"
                     android:gravity="center"
                     android:id="@+id/textView20"
                     android:layout_weight="1"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -252,7 +252,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="11:28 AM"
+                    android:text="11:07 AM"
                     android:gravity="center"
                     android:id="@+id/textView22"
                     android:layout_weight="1"/>
@@ -260,7 +260,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="12:15 PM"
+                    android:text="11:48 AM"
                     android:gravity="center"
                     android:id="@+id/textView23"
                     android:layout_weight="1"/>
@@ -268,13 +268,13 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 min"
+                    android:text="41 min"
                     android:gravity="center"
                     android:id="@+id/textView24"
                     android:layout_weight="1"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -295,7 +295,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="12:19 PM"
+                    android:text="11:52 AM"
                     android:gravity="center"
                     android:id="@+id/textView26"
                     android:layout_weight="1"/>
@@ -303,7 +303,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1:06 PM"
+                    android:text="12:33 PM"
                     android:gravity="center"
                     android:id="@+id/textView27"
                     android:layout_weight="1"/>
@@ -311,13 +311,13 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 min"
+                    android:text="41 min"
                     android:gravity="center"
                     android:id="@+id/textView28"
                     android:layout_weight="1"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -338,7 +338,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1:10 PM"
+                    android:text="12:37 PM"
                     android:gravity="center"
                     android:id="@+id/textView30"
                     android:layout_weight="1"/>
@@ -346,7 +346,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1:57 PM"
+                    android:text="1:18 PM"
                     android:gravity="center"
                     android:id="@+id/textView31"
                     android:layout_weight="1"/>
@@ -354,13 +354,13 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 min"
+                    android:text="41 min"
                     android:gravity="center"
                     android:id="@+id/textView32"
                     android:layout_weight="1"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -382,7 +382,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2:01 PM"
+                    android:text="1:22 PM"
                     android:gravity="center"
                     android:id="@+id/textView34"
                     android:layout_weight="1"/>
@@ -390,7 +390,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2:48 PM"
+                    android:text="2:03 PM"
                     android:gravity="center"
                     android:id="@+id/textView35"
                     android:layout_weight="1"/>
@@ -398,13 +398,13 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 min"
+                    android:text="41 min"
                     android:gravity="center"
                     android:id="@+id/textView36"
                     android:layout_weight="1"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -425,7 +425,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2:52 PM"
+                    android:text="2:07 PM"
                     android:gravity="center"
                     android:id="@+id/textView38"
                     android:layout_weight="1"/>
@@ -433,7 +433,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3:39 PM"
+                    android:text="2:48 PM"
                     android:gravity="center"
                     android:id="@+id/textView39"
                     android:layout_weight="1"/>
@@ -441,13 +441,13 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 min"
+                    android:text="41 min"
                     android:gravity="center"
                     android:id="@+id/textView40"
                     android:layout_weight="1"/>
         </TableRow>
         <View
-                android:layout_height="2dip"
+                android:layout_height="0.5dp"
                 android:background="?attr/dividercolor" />
         <TableRow
                 android:layout_width="fill_parent"
@@ -468,7 +468,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3:43 PM"
+                    android:text="2:52 PM"
                     android:gravity="center"
                     android:id="@+id/textView42"
                     android:layout_weight="1"/>
@@ -476,7 +476,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4:30 PM"
+                    android:text="3:35 PM"
                     android:gravity="center"
                     android:id="@+id/textView43"
                     android:layout_weight="1"/>
@@ -484,7 +484,7 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="47 min"
+                    android:text="43 min"
                     android:gravity="center"
                     android:id="@+id/textView44"
                     android:layout_weight="1"/>

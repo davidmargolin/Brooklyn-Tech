@@ -24,7 +24,10 @@
         <item name="emailcolor">@drawable/ic_action_email</item>
         <item name="selectable">@drawable/selector_light</item>
         <item name="drawertextcolor">@color/Black</item>
+        <item name="android:moreIcon">@drawable/ic_action_more_vert</item>
+        <item name="android:windowContentOverlay">@null</item>
         <item name="listcard">@drawable/simplelistselector_light</item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/homeasup</item>-->
         <item name="ptrHeaderStyle">@style/Widget.Custom.PtrHeader_light</item>
     </style>
 
@@ -39,6 +42,8 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="dividercolorswitch">@color/verydarkgray</item>
         <item name="android:windowBackground">@color/verydarkgray</item>
+        <item name="android:moreIcon">@drawable/ic_action_more_vert</item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/homeasup</item>-->
         <item name="icdrawercolor">@drawable/ic_drawer_light</item>
         <item name="android:actionBarStyle">@style/DarkBlueActionBar</item>
         <!--<item name="descriptiontext">@android:style/Widget.Holo.TextView</item>-->

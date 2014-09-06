@@ -18,10 +18,11 @@
         android:textColor="?attr/textcolor"
         android:textAppearance="@android:style/TextAppearance" />
     <View
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:layout_margin="8dp"
         android:layout_width="fill_parent"
-        android:background="?attr/dividercolor"/>
+        android:background="?attr/dividercolor"
+        android:visibility="gone" />
     <TextView
         android:id="@+id/tvPubDate"
         android:layout_width="match_parent"
@@ -44,5 +45,6 @@
         android:id="@+id/tvLnk"
         android:layout_width="match_parent"
         android:textColor="?attr/textcolor"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
     </LinearLayout>

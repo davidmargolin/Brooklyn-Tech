@@ -40,6 +40,7 @@ public class FinalStaff extends SwipeBackActivity {
     ProgressBar progress;
     Async task;
     Elements staff;
+    String website;
     private SwipeBackLayout mSwipeBackLayout;
     ScalpelFrameLayout scalpelView;
     ArrayList<String> d = new ArrayList<String>();
@@ -64,6 +65,11 @@ public class FinalStaff extends SwipeBackActivity {
         subdepartment = bundle.getString("SubDep");
         staffmemberlist = (ListView)findViewById(R.id.lvDepartments);
         getActionBar().setTitle(subdepartment);
+        if (subdeplink.contains("none")){
+            website = "http://bths.edu/apps/staff/";
+        }else{
+            website = subdeplink +"&termREC_ID=&pREC_ID=staff";
+        }
         task = new Async();
         task.execute();
         if (devmode){
@@ -81,7 +87,7 @@ public class FinalStaff extends SwipeBackActivity {
         @Override
         protected String doInBackground(String... urls) {
             try {
-                staffdoc = Jsoup.connect(subdeplink +"&termREC_ID=&pREC_ID=staff")
+                staffdoc = Jsoup.connect(website)
                         .userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36")
                         .get();
                 //final Elements paragraphs = doc.select("p").prepend("\\n\\n");
@@ -108,7 +114,7 @@ public class FinalStaff extends SwipeBackActivity {
             super.onPostExecute(result);
             progress.setVisibility(View.GONE);
             staffmemberlist.setVisibility(View.VISIBLE);
-            MySimpleArrayAdapter customAdapter = new MySimpleArrayAdapter(getBaseContext() , d, subdeplink, staffdoc);
+            MySimpleArrayAdapter customAdapter = new MySimpleArrayAdapter(getBaseContext() , d, staffdoc);
             staffmemberlist.setAdapter(customAdapter);
     }
     }

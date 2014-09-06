@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +41,7 @@ public class CalendarFragment extends Fragment {
     String calwebsite;
     Button next;
     Button previous;
+    ProgressBar loadingbar;
     Async task;
     ScalpelFrameLayout scalpelView;
     @Override
@@ -59,7 +61,8 @@ public class CalendarFragment extends Fragment {
         cal=Calendar.getInstance();
         next = (Button)mCalendarCard.findViewById(R.id.next);
         previous = (Button)mCalendarCard.findViewById(R.id.previous);
-
+        loadingbar = (ProgressBar)v.findViewById(R.id.progressBar);
+        loadingbar.setIndeterminate(true);
         mCalendarCard.setDateDisplay(cal);
         //cal.set(2013, 2,5);
         calwebsite = "http://www.bths.edu/apps/events/list_pff.jsp?sd=&y="+ mCalendarCard.getDateDisplay().get(Calendar.YEAR) +"&m="+ mCalendarCard.getDateDisplay().get(Calendar.MONTH) +"&id=0";
@@ -77,7 +80,10 @@ public class CalendarFragment extends Fragment {
         return v;
     }
     class Async extends AsyncTask<String, Void, String> {
-
+        @Override
+        protected void onPreExecute() {
+           loadingbar.setVisibility(View.VISIBLE);
+        }
         @Override
         protected String doInBackground(String... urls) {
             try {
@@ -131,7 +137,7 @@ public class CalendarFragment extends Fragment {
                     try{
                         calparagraphs = caldoc.select("td:contains(" + " " + day + ", " + mCalendarCard.getDateDisplay().get(Calendar.YEAR) + ")>ul>li");
                         displaydate = new SimpleDateFormat("MMMM").format(cal.getTime()) + " " + day + ", " + mCalendarCard.getDateDisplay().get(Calendar.YEAR);
-                        displayevent = Html.fromHtml(calparagraphs.toString()).toString().replaceFirst("\n","");
+                        displayevent = Html.fromHtml(calparagraphs.toString()).toString().replaceFirst("\n", "");
 
 
                     }catch(NullPointerException e){
@@ -141,9 +147,9 @@ public class CalendarFragment extends Fragment {
                     if (!error) {
                         if (displayevent.length() > 2) {
                             String displayinfo = displaydate + "\n" + displayevent;
-                            Toast.makeText(getActivity().getBaseContext(), displayinfo, Toast.LENGTH_LONG).show();
+                            Toast.makeText(getActivity().getBaseContext(), displayinfo, Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(getActivity().getBaseContext(), "No events found", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getActivity().getBaseContext(), "No events found", Toast.LENGTH_SHORT).show();
                         }
                     }else {
                         Toast.makeText(getActivity().getBaseContext(), "Couldn't connect to network", Toast.LENGTH_SHORT).show();
@@ -152,6 +158,7 @@ public class CalendarFragment extends Fragment {
 
                 }
             });
+            loadingbar.setVisibility(View.INVISIBLE);
         }
 
     }

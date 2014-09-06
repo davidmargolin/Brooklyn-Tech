@@ -25,13 +25,11 @@ import java.util.ArrayList;
     Element email;
         private final Context context;
         private final ArrayList values;
-        private final String link;
         private final Document doc;
-        public MySimpleArrayAdapter(Context context, ArrayList values, String link, Document doc) {
+        public MySimpleArrayAdapter(Context context, ArrayList values, Document doc) {
             super(context, R.layout.emailbrowsingcard, values);
             this.context = context;
             this.values = values;
-            this.link = link;
             this.doc=doc;
         }
     static class ViewHolder {

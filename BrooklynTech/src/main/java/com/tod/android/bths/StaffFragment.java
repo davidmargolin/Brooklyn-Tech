@@ -47,6 +47,7 @@ public class StaffFragment extends Fragment {
 		View v = inflater.inflate(R.layout.staff_fragment_layout, container, false);
         departmentlist= (ListView)v.findViewById(R.id.lvDepartments);
         progress = (ProgressBar)v.findViewById(R.id.progressBar1);
+    //    a.add("All Departments");
         task = new Async();
         task.execute();
 return v;

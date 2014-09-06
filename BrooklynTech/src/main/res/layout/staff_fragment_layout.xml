@@ -33,6 +33,8 @@
         android:footerDividersEnabled="true"
         android:overScrollMode="always"
         android:visibility="visible"
+        android:fastScrollEnabled="true"
+        android:scrollingCache="true"
         android:layout_gravity="center_horizontal|top"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"

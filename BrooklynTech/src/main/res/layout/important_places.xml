@@ -42,8 +42,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                        android:layout_height="2dip"
-                        android:background="?attr/dividercolor" />
+                        android:layout_height="0.5dp"
+                        android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -65,8 +67,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -88,8 +92,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -111,8 +117,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -134,8 +142,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -157,8 +167,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -180,8 +192,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -203,8 +217,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -226,8 +242,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -249,8 +267,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -272,8 +292,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -295,8 +317,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -318,8 +342,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -341,8 +367,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -364,8 +392,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -387,8 +417,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -410,8 +442,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -433,8 +467,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -456,8 +492,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -479,8 +517,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -502,8 +542,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -525,8 +567,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -548,8 +592,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -571,8 +617,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -594,8 +642,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">
@@ -617,8 +667,10 @@
                             android:lines="2"/>
                 </TableRow>
                 <View
-                    android:layout_height="2dip"
-                    android:background="?attr/dividercolor" />
+                    android:layout_height="0.5dp"
+                    android:background="?attr/dividercolor"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp" />
                 <TableRow
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent">

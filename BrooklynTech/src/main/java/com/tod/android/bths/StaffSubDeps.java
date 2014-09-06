@@ -50,9 +50,13 @@ public class StaffSubDeps extends SwipeBackActivity {
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         department = bundle.getString("Dep");
+   //     if (department == "All Departments"){
+     //       department = "";
+       // }
         progress = (ProgressBar)findViewById(R.id.progressBar1);
         subdepartmentlist = (ListView)findViewById(R.id.lvDepartments);
         getActionBar().setTitle(department);
+   //     b.add("All Staff");
         task = new Async();
         task.execute();
         mSwipeBackLayout = getSwipeBackLayout();
@@ -68,7 +72,11 @@ public class StaffSubDeps extends SwipeBackActivity {
                         .userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.19 Safari/537.36")
                         .get();
                 //final Elements paragraphs = doc.select("p").prepend("\\n\\n");
-                subdepartments = subdepdoc.select("fieldset:contains("+ department +") > ul > li > dl > dt");
+                if (department.equals("All Departments")){
+                    subdepartments = subdepdoc.select("ul>li>dl>dt");
+                }else{
+                    subdepartments = subdepdoc.select("fieldset:contains("+ department +") > ul > li > dl > dt");
+                }
                 for (Element department : subdepartments) {
                     b.add(department.text());
                 }
@@ -94,7 +102,12 @@ public class StaffSubDeps extends SwipeBackActivity {
             subdepartmentlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    String deplink= subdepdoc.select("ul>li:contains("+ b.get(position) +")").first().attr("abs:onclick");
+                    String deplink;
+                    if (b.get(position) == "All Staff") {
+                        deplink = "none";
+                    } else {
+                        deplink = subdepdoc.select("ul>li:contains(" + b.get(position) + ")").first().attr("abs:onclick");
+                    }
                     Intent intent = new Intent(getApplicationContext(), FinalStaff.class);
                     intent.putExtra("Link", deplink);
                     intent.putExtra("SubDep", b.get(position));

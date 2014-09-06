@@ -99,6 +99,7 @@ public class CalendarCard extends RelativeLayout {
             @Override
             public void onRender(CheckableLayout v, CardGridItem item) {
                 ((TextView)v.getChildAt(0)).setText(item.getDayOfMonth().toString());
+
             }
         };
 
@@ -153,6 +154,7 @@ public class CalendarCard extends RelativeLayout {
             CheckableLayout cell = cells.get(counter);
             cell.setTag(new CardGridItem(i).setEnabled(true).setDate(date));
             cell.setEnabled(true);
+            cell.setChecked(false);
             cell.setVisibility(View.VISIBLE);
             (mOnItemRender == null ? mOnItemRenderDefault : mOnItemRender).onRender(cell, (CardGridItem)cell.getTag());
             counter++;
@@ -183,6 +185,7 @@ public class CalendarCard extends RelativeLayout {
                 cells.get(i).setVisibility(View.GONE);
             }
         }
+        invalidate();
     }
 
     @Override
